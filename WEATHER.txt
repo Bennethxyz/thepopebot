@@ -1,9 +1,37 @@
 Weather for Claremont, CA
-Retrieved: Friday, February 6, 2026 at 08:00 AM UTC
+Retrieved: Saturday, February 7, 2026 at 01:17 AM UTC
 
-Condition: Overcast ☁️
-Temperature: 17°C (63°F) - feels like 17°C
-Humidity: 46%
-Wind: 7 km/h (NE)
-Precipitation: 0.0mm
-UV Index: 0
+=== Current Conditions (as of 5:17 PM PST, February 6, 2026) ===
+Temperature: 64°F
+Feels Like: 64°F
+Conditions: Sunny
+Wind: N 3 mph, Gusts 4 mph
+Humidity: 58%
+Pressure: 30.08 in
+Visibility: 10 miles
+Clouds: Partly Cloudy
+Dew Point: 50°F
+Rainfall: 0 in
+
+=== Today's Summary (February 6, 2026) ===
+High: 70°F (Sunny)
+Low: 55°F
+
+=== Tonight ===
+Low: 52°F
+Conditions: Partly Cloudy
+Rain Chance: 5%
+Wind: NW 9 mph
+
+=== Forecast ===
+
+Sat Feb 7:  High 77°F / Low 57°F - Partly Cloudy (4% rain)
+Sun Feb 8:  High 81°F / Low 56°F - Sunny (0% rain)
+Mon Feb 9:  High 75°F / Low 54°F - Mostly Cloudy (0% rain)
+Tue Feb 10: High 60°F / Low 50°F - Showers (46% rain)
+Wed Feb 11: High 61°F / Low 50°F - Cloudy (24% rain)
+Thu Feb 12: High 68°F / Low 50°F - Partly Cloudy (15% rain)
+Fri Feb 13: High 69°F / Low 49°F - Mostly Sunny (5% rain)
+Sat Feb 14: High 65°F / Low 48°F - Mostly Cloudy (22% rain)
+
+Sources: Weather Underground, The Weather Channel, timeanddate.com
