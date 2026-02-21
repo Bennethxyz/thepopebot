@@ -32,6 +32,7 @@ jobs:
           fi
           echo "Using image: $IMAGE"
           docker run --rm \
+            --add-host=host.docker.internal:host-gateway \
             -e REPO_URL="${{ github.server_url }}/${{ github.repository }}.git" \
             -e BRANCH="${{ github.ref_name }}" \
             -e SECRETS='${{ secrets.SECRETS }}' \

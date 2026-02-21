@@ -36,6 +36,33 @@ RUN npm install -g @mariozechner/pi-coding-agent
 # Create Pi config directory (extension loaded from repo at runtime)
 RUN mkdir -p /root/.pi/agent
 
+# Configure Ollama provider for Pi
+RUN echo '{ \
+  "providers": { \
+    "ollama": { \
+      "baseUrl": "http://host.docker.internal:11434/v1", \
+      "api": "openai-completions", \
+      "apiKey": "ollama", \
+      "models": [ \
+        { \
+          "id": "qwen2.5-coder:7b-instruct", \
+          "name": "Qwen 2.5 Coder 7B (Local)", \
+          "reasoning": false, \
+          "input": ["text"], \
+          "contextWindow": 32768, \
+          "maxTokens": 8192, \
+          "cost": { \
+            "input": 0, \
+            "output": 0, \
+            "cacheRead": 0, \
+            "cacheWrite": 0 \
+          } \
+        } \
+      ] \
+    } \
+  } \
+}' > /root/.pi/agent/models.json
+
 # Clone pi-skills and install browser-tools (includes Puppeteer + Chromium)
 RUN git clone https://github.com/badlogic/pi-skills.git /pi-skills
 WORKDIR /pi-skills/browser-tools

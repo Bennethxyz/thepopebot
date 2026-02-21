@@ -75,7 +75,9 @@ $(cat /job/logs/${JOB_ID}/job.md)"
 
 MODEL_FLAGS=""
 if [ -n "$MODEL" ]; then
-    MODEL_FLAGS="--provider anthropic --model $MODEL"
+    MODEL_FLAGS="--provider ollama --model $MODEL"
+else
+    MODEL_FLAGS="--provider ollama --model qwen2.5-coder:7b-instruct"
 fi
 
 pi $MODEL_FLAGS -p "$PROMPT" --session-dir "${LOG_DIR}"
